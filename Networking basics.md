@@ -2,5 +2,5 @@ Hello im going to show you how to set up 2 of your virtual machines in the same 
 
 Im going to show how to do it with VirtualBox and with Vmware Workstation pro 17
 
-<p color:red>Vmware Workstation pro 17</p>
+<code>Vmware Workstation pro 17</code>
 Firts 
