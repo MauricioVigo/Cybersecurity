@@ -1,6 +1,6 @@
 # Connection 
 
-"I'm going to show you how to set up your virtual machines on the same network so they can communicate with each other.
+I'm going to show you how to set up your virtual machines on the same network so they can communicate with each other.
 
 I'll be using right now VMware Workstation Pro 17
 
