@@ -1,8 +1,8 @@
 # M87 Writeups
-Im going to explain how to get access to a VM made for pentesting called M87, you can download the VM here <code>[M87](https://www.vulnhub.com/entry/m87-1,595/)</code>
+I'll explain how to access a VM designed for penetration testing called M87. You can download the VM here <code>[M87](https://www.vulnhub.com/entry/m87-1,595/)</code>
 
 >[!NOTE]
->we have to set up both machines in the same Network so they can comunicate with each other, if you dont know how to do it you can find they steps down here. 
+>We need to set up both machines on the same network so that they can communicate with each other, if you're unsure how to do this, you can follow the steps below.
 
 - <code>[Virtualbox](https://github.com/MauricioVigo/Cybersecurity/blob/main/Making%20Nat-Network%20in%20Virtualbox.md)</code>
 
