@@ -91,8 +91,16 @@ We're going to the folder where the saved file is and checking what's inside.
 
 - **12-** The user and password were correct allowing us to gain access. We then move into the terminal granting us nearly complete control over the PC.
 
+As an additional step if you'd rather not use their website terminal, you can easily set up a reverse shell using netcat.
+
+![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/6d39976f-6751-4daf-bc21-c3e30f8ab38f)
 
 
+We run the ***nc*** command in our kali machine with the options ***-lnvp*** where: 
+ - ***-l*** tells netcat that it should operate in listening mode.
+ - ***-n*** tells that the ip will be in numbers to skip DNS resolution.
+ - ***-v*** means verbose that will provide more detailed information about the process.
+ - ***-p*** allows us to specify the port number that is going to use.
 
 
 
