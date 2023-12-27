@@ -61,11 +61,11 @@ Now that we have identified the IP for M87 as 192.168.1.9, we will proceed with 
 ## Step 4
 On both ports, we observe the presence of two login interfaces.
 
-<code> Port 80 </code>
+#### Port 80
 
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/4049d0ae-4ba8-4d6d-a29b-1ecb2f0edde9)
 
-<code> Port 9090 </code>
+#### Port 9090
 
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/5aea1dd4-6bee-4149-9a59-fccb4993e640)
 
