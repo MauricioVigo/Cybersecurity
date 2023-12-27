@@ -41,7 +41,7 @@ When launching M87, we notice a login prompt, but we lack both the username and 
 
 <a name="step2"></a>
 ## Step 2
-We are aware that both of our machines exist within the same network. However, the IP address of M87 remains unknown. To resolve this, we can employ the <code>nmap</code> tool with the -sn argument, which conducts a ping scan for network discovery.
+We are aware that both of our machines exist within the same network. However, the IP address of M87 remains unknown. To resolve this, we can employ the <code>nmap</code> tool with the <code>-sn</code> argument, which conducts a ping scan for network discovery.
 
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/c66154ff-2561-4d62-b0f6-06e132cc77c0)
 
