@@ -11,18 +11,18 @@ I'll explain how to access a VM designed for penetration testing called M87. You
 <br>
 
 # Table of contents
-1. [Introduction](#step1)
-2. [Some paragraph](#step2)
-3. [Sub paragraph](#step3)
-4. [Another paragraph](#step4)
-5. [Another paragraph](#step5)
-6. [Another paragraph](#step6)
-7. [Another paragraph](#step7)
-8. [Another paragraph](#step8)
-9. [Another paragraph](#step9)
-10. [Another paragraph](#step10)
-11. [Another paragraph](#step11)
-12. [Another paragraph](#step12)
+1. [First Steps](#step1)
+2. [Nmap Network Discovery](#step2)
+3. [Nmap Port-Service Scan ](#step3)
+4. [Login Interfaces](#step4)
+5. [Crawling with Wfuzz](#step5)
+6. [Hidden login](#step6)
+7. [Injectable Hidden parameter](#step7)
+8. [Sql Injection with Sqlmap](#step8)
+9. [Getting users and passwords with Sqlmap](#step9)
+10. [Reading /etc/passwd with Sqlmap](#step10)
+11. [Getting access to the victims terminal](#step11)
+12. [Reverse shell](#step12)
 
 
 We are going to use a Kali linux as the attacker and the M87 as the victim
