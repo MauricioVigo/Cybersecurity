@@ -118,7 +118,7 @@ In the victims terminal in port 9090 we run this command:
 
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/74814dcd-d0d6-49d5-98c6-e6e75197a5e7)
 
-- ***-e*** instructs netcat to execute the next command, which in this case is /bin/bash, at the specified target IP address.
+- ***-e*** instructs netcat to execute the next command, which in this case is /bin/bash, at the specified target IP address and port.
 
 After everything is ready we got back to our kali terminal and we can see that we have direct access to the victims pc
 
