@@ -32,8 +32,8 @@ We are going to use a Kali linux as the attacker and the M87 as the victim
 Let's begin!"
 
 <a name="step1"></a>
- ## Step 1
- When launching M87, we notice a login prompt, but we lack both the username and password.
+## Step 1
+When launching M87, we notice a login prompt, but we lack both the username and password.
 
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/f2688039-a89b-486b-bc38-cd590b1b5c93)
 
