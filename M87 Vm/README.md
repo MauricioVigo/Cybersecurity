@@ -120,7 +120,7 @@ Now that we know what the database is called, we're going to gather all the info
 [Back](#index)
 <a name="step10"></a>
 ## Step 10
-As we can see, the passwords are in plain text, so there's no need to crack them, even though we tried different usernames and passwords for the logins without success, it seems like we might be missing something. To investigate further, we're trying to get the passwd file to see which users the server has.
+As we can see, the passwords are in plain text, so there's no need to crack them, even though we tried different usernames and passwords for the logins without success, it seems like we might be missing something. To investigate further, we're trying to get the ***passwd*** file to see which users the server has.
 
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/0b0ff6b2-14eb-48b4-9473-9ae11e0c85d0)
 
@@ -143,7 +143,7 @@ After checking the passwd file, we found that besides ***root*** the only other 
 ## Step 12
 The user and password were correct allowing us to gain access. We then move into the terminal granting us nearly complete control over the PC.
 
-As an additional step if we rather not use their website terminal, we can easily set up a reverse shell using netcat.
+As an additional step if we rather not use their website terminal, we can easily set up a reverse shell using `netcat`.
 
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/6d39976f-6751-4daf-bc21-c3e30f8ab38f)
 
