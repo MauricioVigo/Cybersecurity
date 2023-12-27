@@ -24,6 +24,7 @@ I'll explain how to access a VM designed for penetration testing called M87. You
 10. [Reading /etc/passwd with Sqlmap](#step10)
 11. [Getting access to the victims terminal](#step11)
 12. [Reverse shell](#step12)
+13. [Conclusion](#step13)
 
 We are going to use a Kali linux as the attacker and the M87 as the victim.
 
@@ -166,4 +167,18 @@ After everything is ready we got back to our kali terminal and we can see that w
 
 [Back](#index)
 
+<a name="step13"></a>
+##  Conclusion
+In summary this tutorial has guided us through a systematic ethical hacking process, we learn about key steps of network discovery, port scanning, and vulnerability identification. 
 
+Starting with a login prompt on M87 machine using tools like nmap, wfuzz, and sqlmap for network reconnaissance, crawling, and database exploration respectively, uncovering hidden parameters and confirming injectable values led us to extract critical information, such as the database name and passwords.
+
+It was also introduced an additional step demonstrating the setup of a simple reverse shell using netcat. 
+
+At the end we had nearly complete control over the victim's PC, reinforcing the importance of securing systems against potential vulnerabilities and highlighting the need for cybersecurity awareness.
+
+I hope this tutorial serves as a comprehensive guide for ethical hacking enthusiasts, emphasizing the importance of a meticulous and ethical approach to cybersecurity challenges.
+
+<br>
+
+[Back](#index)
