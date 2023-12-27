@@ -24,6 +24,7 @@ I'll explain how to access a VM designed for penetration testing called M87. You
 11. [Getting access to the victims terminal](#step11)
 12. [Reverse shell](#step12)
 
+<a name="index"></a>
 
 We are going to use a Kali linux as the attacker and the M87 as the victim
 
@@ -45,6 +46,7 @@ We are aware that both of our machines exist within the same network. However, t
 
 <br> 
 
+[Index](#index)
 <a name="step3"></a>
 ## Step 3
 Now that we have identified the IP for M87 as 192.168.1.9, we will proceed with a port scan using <code>nmap</code> to determine the version and type of service running on each port. Our scan reveals two open ports, 80 and 9090. Let's explore further.
@@ -53,6 +55,7 @@ Now that we have identified the IP for M87 as 192.168.1.9, we will proceed with 
 
 <br> 
 
+[Index](#index)
 <a name="step4"></a>
 ## Step 4
 On both ports, we observe the presence of two login interfaces.
@@ -67,6 +70,7 @@ On both ports, we observe the presence of two login interfaces.
 
 <br>
 
+[Index](#index)
 <a name="step5"></a>
 ## Step 5
 We will attempt to perform crawling using <code>wfuzz</code> to identify any hidden content. Upon examination of both ports, we discover valuable information exclusively on port 80, we uncover two assets: ***assets*** and ***admin***.
@@ -75,6 +79,7 @@ We will attempt to perform crawling using <code>wfuzz</code> to identify any hid
 
 <br>
 
+[Index](#index)
 <a name="step6"></a>
 ## Step 6
 Of the two of them only admin proves to be valuable, upon investigation, we encounter another login interface, this particular login includes a hidden parameter, ***id***, it is important to highlight that the existence of concealed parameters are often essential for the database query, and may not be visible but can be recall as in this case with the 'ID' parameter."
@@ -82,6 +87,7 @@ Of the two of them only admin proves to be valuable, upon investigation, we enco
 
 <br>
 
+[Index](#index)
 <a name="step7"></a>
 ## Step 7
 We experiment with different values including the ID, into the logging system, and it responds with a name, so its a confirmation that the value is indeed injectable.
@@ -90,6 +96,7 @@ We experiment with different values including the ID, into the logging system, a
 
 <br>
 
+[Index](#index)
 <a name="step8"></a>
 ## Step 8
 We want to find out the name of the database. To do this, we use a tool called <code>sqlmap</code>. We run a command with the tool, providing the IP address and the vulnerable parameter ID to execute the injection and get the database name.
@@ -99,6 +106,7 @@ We want to find out the name of the database. To do this, we use a tool called <
 
 <br>
 
+[Index](#index)
 <a name="step9"></a>
 ## Step 9
 Now that we know what the database is called, we're going to gather all the information it has inside.
@@ -107,6 +115,7 @@ Now that we know what the database is called, we're going to gather all the info
 
 <br>
 
+[Index](#index)
 <a name="step10"></a>
 ## Step 10
 As we can see, the passwords are in plain text, so there's no need to crack them, even though we tried different usernames and passwords for the logins without success, it seems like we might be missing something. To investigate further, we're trying to get the passwd file to see which users the server has.
@@ -118,6 +127,7 @@ We're going to the folder where the saved file is and checking what's inside.
 
 <br>
 
+[Index](#index)
 <a name="step11"></a>
 ## Step 11
 After checking the passwd file, we found that besides ***root*** the only other user is ***charlotte***, now that we have the username, we'll use the admin password we discovered in the database.
@@ -126,6 +136,7 @@ After checking the passwd file, we found that besides ***root*** the only other 
 
 <br>
 
+[Index](#index)
 <a name="step12"></a>
 ## Step 12
 The user and password were correct allowing us to gain access. We then move into the terminal granting us nearly complete control over the PC.
@@ -151,6 +162,6 @@ After everything is ready we got back to our kali terminal and we can see that w
 
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/1fda81eb-7402-4b2a-9617-c02ffb573d4f)
 
-
+[Index](#index)
 
 
