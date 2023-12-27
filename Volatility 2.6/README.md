@@ -35,3 +35,8 @@ Firts after you have your dump file, we need to identiy what type of profile we 
 
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/78dc41a5-449c-4d10-8e5e-aa4e787c15c5)
 
+Now knowing the profile we can use -h again and see what options and plugins apply to this profile.
+
+![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/7da7dfb1-fc91-4a61-8178-9c158d352205)
+
+
