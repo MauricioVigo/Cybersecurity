@@ -25,9 +25,9 @@ I'll explain how to access a VM designed for penetration testing called M87. You
 11. [Getting access to the victims terminal](#step11)
 12. [Reverse shell](#step12)
 
-We are going to use a Kali linux as the attacker and the M87 as the victim
+We are going to use a Kali linux as the attacker and the M87 as the victim.
 
-Let's begin!"
+Let's begin!
 
 <br>
 
