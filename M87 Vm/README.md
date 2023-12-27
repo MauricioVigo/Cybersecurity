@@ -10,6 +10,9 @@ I'll explain how to access a VM designed for penetration testing called M87. You
 
 <br>
 
+# Table of contents
+1. [Introduction](#step6)
+
 We are going to use a Kali linux as the attacker and the M87 as the victim
 
 Let's begin!"
@@ -58,6 +61,8 @@ We will attempt to perform crawling using <code>wfuzz</code> to identify any hid
 ## Step 6
 Of the two of them only admin proves to be valuable, upon investigation, we encounter another login interface, this particular login includes a hidden parameter, ***id***, it is important to highlight that the existence of concealed parameters are often essential for the database query, and may not be visible but can be recall as in this case with the 'ID' parameter."
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/f7e27bf3-51f7-410a-9096-3e73b5b062b0)
+
+<a name="step6"></a>
 
 <br>
 
