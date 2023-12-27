@@ -103,16 +103,27 @@ After checking the passwd file, we found that besides ***root*** the only other 
 ## Step 12
 The user and password were correct allowing us to gain access. We then move into the terminal granting us nearly complete control over the PC.
 
-As an additional step if you'd rather not use their website terminal, you can easily set up a reverse shell using netcat.
+As an additional step if we rather not use their website terminal, we can easily set up a reverse shell using netcat.
 
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/6d39976f-6751-4daf-bc21-c3e30f8ab38f)
 
 
-We run the ***nc*** command in our kali machine with the options ***-lnvp*** where: 
+We run the ***nc*** command in our kali machine with the options ***-lnvp*** like in the image below where: 
  - ***-l*** tells netcat that it should operate in listening mode.
  - ***-n*** tells that the ip will be in numbers to skip DNS resolution.
  - ***-v*** means verbose that will provide more detailed information about the process.
  - ***-p*** allows us to specify the port number that is going to use.
+
+In the victims terminal in port 9090 we run this command: 
+
+![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/74814dcd-d0d6-49d5-98c6-e6e75197a5e7)
+
+- ***-e*** instructs netcat to execute the next command, which in this case is /bin/bash, at the specified target IP address.
+
+After everything is ready we got back to our kali terminal and we can see that we have direct access to the victims pc
+
+![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/1fda81eb-7402-4b2a-9617-c02ffb573d4f)
+
 
 
 
