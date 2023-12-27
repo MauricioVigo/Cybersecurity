@@ -101,6 +101,7 @@ We experiment with different values including the ID, into the logging system, a
 <a name="step8"></a>
 ## Step 8
 We want to find out the name of the database. To do this, we use a tool called <code>sqlmap</code>. We run a command with the tool, providing the IP address and the vulnerable parameter ID to execute the injection and get the database name.
+<code>sqlmap -u URL --dbs --level=5 --flush-session</code>
 
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/cd581992-cabf-480e-8ae0-8be7fbce388a)
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/c836c3cc-6ef2-47c5-b269-d9c98a2098ed)
