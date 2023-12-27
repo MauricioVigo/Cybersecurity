@@ -169,7 +169,7 @@ After everything is ready we got back to our kali terminal and we can see that w
 
 <a name="step13"></a>
 ##  Conclusion
-In summary this tutorial has guided us through a systematic ethical hacking process, we learn about key steps of network discovery, port scanning, and vulnerability identification. 
+This tutorial has guided us through a systematic ethical hacking process, we learn about key steps of network discovery, port scanning, and vulnerability identification. 
 
 Starting with a login prompt on M87 machine using tools like nmap, wfuzz, and sqlmap for network reconnaissance, crawling, and database exploration respectively, uncovering hidden parameters and confirming injectable values led us to extract critical information, such as the database name and passwords.
 
