@@ -41,8 +41,24 @@ Now knowing the profile we can apply it with <code>--profile=PROFILE</code> and 
 
 Now after we have the profile set, we can use all the different plugins depending on your needs
 
-###Pslist
+### Pslist
+
 `./volatility -f FILE --profile=PROFILE pslist` With this plugin we can show the list of processes that were running on the system at the time of the memory acquisition.
 
-###Pstree
-`./volatility -f FILE --profile=PROFILE pstree`Creates a tree-like representation of the processes running in the memory and stablishes the relationships between them, is usefull to see the parent and the child process when its needed 
+### Pstree
+
+`./volatility -f FILE --profile=PROFILE pstree` Creates a tree-like representation of the processes running in the memory and stablishes the relationships between them, is usefull to see the parent and the child process when its needed 
+
+### Psscan
+`./volatility -f FILE --profile=PROFILE psscan` The purpose of psscan is to identifying concealed or unlinked processes that may not be shown when using the other plugins, and searches memory for process structures so it can detect processes that are hidden by malware or rootkits.
+
+### Dlllist 
+
+`./volatility -f ../1.vmem --profile=Win7SP1x64 dlllist`  We can use this pluging to list all the loaded DLL that are in our memory dump. DDL are shared libraries that contain code and data that multiple programs can use simultaneously, the main use of a DLL is to share content between applications and processes.
+
+### Ldrmodules 
+`./volatility -f ../1.vmem --profile=Win7SP1x64 ldrmodules` ***ldrmodules*** gathers the information about loaded dlls it has 1 column for each of the three PEB lists InLoadOrderModuleList, InMemoryOrderModuleList and InInitializationOrderModuleList  witch is ***true*** or ***false*** depending if a DLL with the same base address is already on the list, this is very helpfull to idenfity Dlls that are unlink from the ***PEB (ProcessEnvironmentBlock)*** that is a common practice to try to hide malware.
+
+### Handles
+
+
