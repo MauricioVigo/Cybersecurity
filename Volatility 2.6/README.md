@@ -1,4 +1,4 @@
-# Volatility 2.6
+![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/8f84cc87-8dac-46e4-b032-ef5e77b7b15b)# Volatility 2.6
 In this guide we are going to explain how volatility 2,6 works
 
 >[!NOTE]
@@ -39,4 +39,10 @@ Now knowing the profile we can apply it with <code>--profile=PROFILE</code> and 
 
 ![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/7da7dfb1-fc91-4a61-8178-9c158d352205)
 
+Now after we have the profile set, we can use all the different plugins depending on your needs
 
+###Pslist
+`./volatility -f FILE --profile=PROFILE pslist` With this plugin we can show the list of processes that were running on the system at the time of the memory acquisition.
+
+###Pstree
+`./volatility -f FILE --profile=PROFILE pstree`Creates a tree-like representation of the processes running in the memory and stablishes the relationships between them, is usefull to see the parent and the child process when its needed 
