@@ -54,11 +54,18 @@ Now after we have the profile set, we can use all the different plugins dependin
 
 ### Dlllist 
 
-`./volatility -f ../1.vmem --profile=Win7SP1x64 dlllist`  We can use this pluging to list all the loaded DLL that are in our memory dump. DDL are shared libraries that contain code and data that multiple programs can use simultaneously, the main use of a DLL is to share content between applications and processes.
+`./volatility -f FILE --profile=PROFILE dlllist`  We can use this pluging to list all the loaded DLL that are in our memory dump. DDL are shared libraries that contain code and data that multiple programs can use simultaneously, the main use of a DLL is to share content between applications and processes.
 
 ### Ldrmodules 
-`./volatility -f ../1.vmem --profile=Win7SP1x64 ldrmodules` ***ldrmodules*** gathers the information about loaded dlls it has 1 column for each of the three PEB lists InLoadOrderModuleList, InMemoryOrderModuleList and InInitializationOrderModuleList  witch is ***true*** or ***false*** depending if a DLL with the same base address is already on the list, this is very helpfull to idenfity Dlls that are unlink from the ***PEB (ProcessEnvironmentBlock)*** that is a common practice to try to hide malware.
+
+`./volatility -f FILE --profile=PROFILE ldrmodules` ***ldrmodules*** gathers the information about loaded dlls it has 1 column for each of the three PEB lists InLoadOrderModuleList, InMemoryOrderModuleList and InInitializationOrderModuleList  witch is ***true*** or ***false*** depending if a DLL with the same base address is already on the list, this is very helpfull to idenfity Dlls that are unlink from the ***PEB (ProcessEnvironmentBlock)*** that is a common practice to try to hide malware.
 
 ### Handles
 
+`./volatility -f FILE --profile=PROFILE handles` With this plugin we can list all the open handles in memory we get the Process id, the handles value and granted access, 
+
+#### What is a handle
+A handle is a Unique identifier that are usually integers that are use to keep in track objects in memory like resources that process and applications are using, they manage the control access to various system resources.
+
+For example to access a resource/object of the system firts a process needs to open a handle, onces is open the handle can be use to perform different operations like writing or reading a file, now that the handle is open it represents the resources that was use from the system the handle keeps track of that resource. 
 
