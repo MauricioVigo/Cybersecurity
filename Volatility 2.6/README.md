@@ -1,4 +1,4 @@
-![image](https://github.com/MauricioVigo/Cybersecurity/assets/95547003/8f84cc87-8dac-46e4-b032-ef5e77b7b15b)# Volatility 2.6
+# Volatility 2.6
 In this guide we are going to explain how volatility 2,6 works
 
 >[!NOTE]
